@@ -5,11 +5,12 @@ body {
   overflow-x: hidden;
 }
 
-.navbar {
-  padding-top: 1%;
-  padding-right: 6%;
-  padding-left: 5%;
+.navbar{
+  padding-top: 15px;
+  padding-right: 70px;
+  padding-left: 70px;
 }
+
 .navbar-brand-left {
   width: 25%;
   height: 25%;
@@ -32,23 +33,22 @@ body {
 .main-cover-wrapper > .container {
   margin-top: 12%;
 }
-.menu-item {
+.nav-link {
   font-size: 15px;
   color: white;
   font-weight: bold;
   text-decoration: none;
   padding-left: 15px;
   padding-right: 15px;
-  margin-top: 2%;
   cursor: pointer;
 }
 
-.menu-item:hover,
-.menu-item:focus {
+.nav-link:hover,
+.nav-link:focus {
   color: white;
 }
 
-.menu-item:active {
+.nav-link:active {
   text-decoration: underline;
 }
 
@@ -611,4 +611,54 @@ textarea::placeholder {
   text-transform: uppercase;
   box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.19);
   background-color: #74aedb;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .navbar{
+    padding-left:10px;
+  }
+  .navbar-brand-left {
+    width: 200px;
+    margin-left: 15px;
+  }
+  .signup-nav {
+    padding: 8px 40px;
+    margin-left: 0px;
+    margin-top: 12px;
+  }
+
+  #right-main-text {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  #left-main-text {
+    font-size: 15px;
+    color: white;
+    text-align: left;
+  }
+  .main-cover-wrapper{
+    height: 65vh;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }

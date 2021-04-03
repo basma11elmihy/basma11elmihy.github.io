@@ -547,8 +547,7 @@ body {
 /*Section9*/
 #section9 {
   background-color: #74aedb;
-  height: 88vh;
-  width: 100vw;
+  padding: 30px 0px;
 }
 input::placeholder {
   color: white !important;
@@ -585,6 +584,7 @@ textarea::placeholder {
   padding: 17px 55px;
   border-radius: 25px;
   outline: none !important;
+  margin-top: 20px;
 }
 
 .section9-heading {
@@ -639,6 +639,12 @@ textarea::placeholder {
   .main-cover-wrapper{
     height: 65vh;
   }
+}
+
+
+/*Section9*/
+#section9{
+  padding: 60px 0px;
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

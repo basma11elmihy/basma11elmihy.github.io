@@ -24,10 +24,10 @@ body {
     url("./Assets/mainCover.jpg");
 
   background-repeat: no-repeat;
-  height: 110vh;
   width: 100%;
   background-size: cover;
   background-position: bottom;
+  padding-bottom: 120px;
 }
 
 .main-cover-wrapper > .container {
@@ -38,8 +38,7 @@ body {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-right: 20px;
   cursor: pointer;
 }
 
@@ -625,7 +624,7 @@ textarea::placeholder {
   .signup-nav {
     padding: 8px 40px;
     margin-left: 0px;
-    margin-top: 12px;
+    margin-top: 8px;
   }
 
   #right-main-text {
@@ -636,7 +635,6 @@ textarea::placeholder {
   #left-main-text {
     font-size: 15px;
     color: white;
-    text-align: left;
   }
   .main-cover-wrapper{
     height: 65vh;
@@ -645,11 +643,13 @@ textarea::placeholder {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+ 
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+ 
 
 }
 

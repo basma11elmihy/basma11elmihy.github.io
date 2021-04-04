@@ -90,6 +90,14 @@ body {
 
 /*section3*/
 
+#section3{
+  display: block;
+}
+
+#section3-mobile{
+display: none;
+}
+
 .section-heading {
   color: black;
   font-weight: 900;
@@ -129,16 +137,6 @@ body {
   margin-left: 18%;
   margin-right: 12%;
   bottom: -26%;
-}
-
-.bottom {
-  position: absolute;
-  display: flex;
-  flex-direction: row;
-  bottom: 0%;
-  left: 0%;
-  height: 8%;
-  width: 50%;
 }
 
 .bottom-right {
@@ -639,12 +637,39 @@ textarea::placeholder {
   .main-cover-wrapper{
     height: 65vh;
   }
-}
 
+  /*Section3*/
 
-/*Section9*/
-#section9{
-  padding: 60px 0px;
+    #section3{
+      display: none;
+    }
+
+    #section3-mobile{
+      display: block;
+    }
+
+    .carousel-caption {
+      position: absolute;
+      bottom: 5px;
+      left: 10px;
+      right: 10px;
+      width: auto;
+      padding:0px 0px;
+      background: none;
+    }
+    .section3-mobile-heading{
+      font-size: 18px;
+    }
+    .section3-mobile-subheading{
+      font-size: 15px;
+      padding: 0px 15px;
+    }
+
+    /*Section9*/
+    #section9{
+      padding: 60px 0px;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

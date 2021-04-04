@@ -186,30 +186,27 @@ display: none;
   border-radius: 15px;
   padding: 8%;
   height: 65vh;
-  margin: 2% 2%;
+  margin: 5% 5%;
 }
 
 .card-img-left {
   content: url("./Assets/security-icon.png");
   width: 40%;
-  height: 40%;
-  padding-top: 5%;
-  padding-bottom: 8%;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 .card-img-middle {
   content: url("./Assets/savings-icon.png");
   width: 40%;
-  height: 40%;
-  padding-top: 5%;
-  padding-bottom: 8%;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 .card-img-right {
   content: url("./Assets/support-icon.png");
   width: 40%;
-  height: 40%;
-  padding-top: 5%;
-  padding-bottom: 8%;
+  padding-top: 15px;
+  padding-bottom: 25px;
 }
 
 /*Section5*/
@@ -665,9 +662,15 @@ textarea::placeholder {
       padding: 0px 15px;
     }
 
+    /*Section4*/
+    .card-section4{
+      height: 55vh;
+    }
+
     /*Section9*/
     #section9{
-      padding: 60px 0px;
+      padding-top: 60px;
+      padding-bottom: 85px;
     }
 
 }

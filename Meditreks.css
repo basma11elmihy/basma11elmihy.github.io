@@ -387,6 +387,7 @@ display: none;
   border: 1px solid;
   border-radius: 80px;
   border-color: #74aedb;
+  margin-right: 20px;
 }
 /*Section8*/
 
@@ -666,6 +667,15 @@ textarea::placeholder {
       height: auto;
     }
 
+    /*Section7*/
+    .f-row{
+      margin: 10px 0px;
+    }
+
+    /*section8*/
+    #pills-slider{
+      transform: translateX(150px);
+    }
     /*Section9*/
     #section9{
       padding-top: 60px;

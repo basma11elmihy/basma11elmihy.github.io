@@ -324,7 +324,7 @@ display: none;
 
 .triangle-isosceles.top:after {
   top: -15px; /* value = - border-top-width - border-bottom-width */
-  right: 50px; /* controls horizontal position */
+  right: 38px; /* controls horizontal position */
   bottom: auto;
   left: auto;
   border-width: 0 15px 15px; /* vary these values to change the angle of the vertex */

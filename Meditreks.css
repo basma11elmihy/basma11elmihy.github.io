@@ -258,6 +258,11 @@ display: none;
   margin-top: 10%;
   position: relative;
   margin-bottom: 6%;
+  display: block;
+}
+
+#section6-mobile{
+  display: none;
 }
 
 .triangle-isosceles {
@@ -665,6 +670,31 @@ textarea::placeholder {
     /*Section4*/
     .card-section4{
       height: auto;
+    }
+
+    /*Section6*/
+    #section6{
+      display: none;
+    }
+
+    #section6-mobile{
+      display: block;
+    }
+
+
+    .triangle-isosceles {
+      position: relative;
+      margin: 0em 0 0em;
+      top: 0%;
+      right: 0%;
+    }
+    .triangle-isosceles.right:after {
+      top: 5px; /* controls vertical position */
+      right: -30px; /* value = - border-left-width - border-right-width */
+      bottom: auto;
+      left: auto;
+      border-width: 40px 0 40px 50px;
+      border-color: transparent #fefefa;
     }
 
     /*Section7*/

@@ -651,12 +651,12 @@ textarea::placeholder {
   }
 
   #right-main-text {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
   }
   
   #left-main-text {
-    font-size: 15px;
+    font-size: 16px;
     color: white;
   }
   .main-cover-wrapper{
@@ -715,6 +715,7 @@ textarea::placeholder {
     #bubble-text-mobile {
       color: #707070;
       text-align: start;
+      font-size: 18px;
       padding-top: 4%;
     }
     
@@ -758,6 +759,31 @@ textarea::placeholder {
     #section9{
       padding-top: 60px;
       padding-bottom: 85px;
+    }
+
+    .section-heading {
+      font-size: 30px;
+    }
+
+    .section4-heading {
+      font-size: 27px;
+    }
+
+
+    .section5-heading {
+      font-size: 27px;
+    }
+    
+    .section5--heading {
+      font-size: 27px;
+    }
+    
+    .sec5-plus {
+      font-size: 27px;
+    }
+    
+    .section5-sub-heading {
+      font-size: 20px;
     }
 
 }

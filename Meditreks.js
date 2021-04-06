@@ -166,7 +166,7 @@ $(document).ready(function(){
   })
 });
 
-$(document).ready(function(){
+$(document).ready(function(){ 
   $('#Monthly').click(function(){
     $('#pills-slider').css("transform","translateX(5px)");
     $(this).css("color","white");
@@ -178,7 +178,13 @@ $(document).ready(function(){
     
   })
   $('#Annually').click(function(){
-    $('#pills-slider').css("transform","translateX(230px)");
+    let yearly = "translateX(205px)";
+    let screen = screen.width;
+  if (screen <= 600){
+    alert(screen);
+    yearly = "translateX(132px)";
+  }
+    $('#pills-slider').css("transform",`translateX(${yearly})`);
     $(this).css("color","white");
     $('#Monthly').css("color","black");
 

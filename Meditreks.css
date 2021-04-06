@@ -1,3 +1,10 @@
+:root {
+  --custom-top: -14px;
+  --custom-right: 38px;
+  --custom-bottom: -15px;
+  --custom-right: 38px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -285,6 +292,9 @@ display: none;
 .triangle-isosceles.top {
   background-color: #fefefa;
 }
+.triangle-isosceles.bottom {
+  background-color: #fefefa;
+}
 
 /* Variant : for left/right positioned triangle
 ------------------------------------------ */
@@ -323,11 +333,20 @@ display: none;
 ------------------------------------------ */
 
 .triangle-isosceles.top:after {
-  top: -15px; /* value = - border-top-width - border-bottom-width */
-  right: 38px; /* controls horizontal position */
+  top: var(--custom-top); /* value = - border-top-width - border-bottom-width */
+  right: var(--custom-right); /* controls horizontal position */
   bottom: auto;
   left: auto;
   border-width: 0 15px 15px; /* vary these values to change the angle of the vertex */
+  border-color: #fefefa transparent;
+}
+
+.triangle-isosceles.bottom:after {
+  bottom: var(--custom-bottom); /* value = - border-top-width - border-bottom-width */
+  right: var(--custom-right); /* controls horizontal position */
+  top: auto;
+  left: auto;
+  border-width: 15px 0px 15px 0x; /* vary these values to change the angle of the vertex */
   border-color: #fefefa transparent;
 }
 
@@ -688,15 +707,21 @@ textarea::placeholder {
       top: 0%;
       right: 0%;
     }
-    .triangle-isosceles.right:after {
-      top: 5px; /* controls vertical position */
-      right: -30px; /* value = - border-left-width - border-right-width */
-      bottom: auto;
-      left: auto;
-      border-width: 40px 0 40px 50px;
-      border-color: transparent #fefefa;
-    }
 
+    #bubble-text-mobile {
+      color: #707070;
+      text-align: start;
+      padding-top: 4%;
+    }
+    
+    #bubble-title-mobile {
+      padding-top: 7%;
+      font-weight: 900;
+    }
+    #bubble-sub-title-mobile {
+      color: #74aedb;
+    }
+   
     /*Section7*/
     .f-row{
       margin: 10px 0px;

@@ -99,6 +99,73 @@ $(document).ready(function(){
   })
 });
 
+//Testimonials Mobile-Section
+$(document).ready(function(){
+  $('#pic1-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
+    document.documentElement.style.setProperty('--custom-top', '-14px');    
+    document.documentElement.style.setProperty("--custom-right","38px");
+    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+    $("#bubble-title-mobile").text("Jasi Toor");
+    $("#bubble-sub-title-mobile").text("CEO");  
+  })
+});
+
+$(document).ready(function(){
+  $('#pic2-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
+    document.documentElement.style.setProperty('--custom-top', '-14px');    
+    document.documentElement.style.setProperty("--custom-right","150px");
+    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+    $("#bubble-title-mobile").text("Basma Elmihy");
+    $("#bubble-sub-title-mobile").text("Front End Developer");  
+  })
+});
+
+$(document).ready(function(){
+  $('#pic3-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
+    document.documentElement.style.setProperty('--custom-top', '-14px');    
+    document.documentElement.style.setProperty("--custom-right","270px");
+    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+    $("#bubble-title-mobile").text("Muhammed Maksoud");
+    $("#bubble-sub-title-mobile").text("Product Designer");  
+  })
+});
+
+$(document).ready(function(){
+  $('#pic6-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
+    document.documentElement.style.setProperty('--custom-bottom', '-15px');    
+    document.documentElement.style.setProperty("--custom-right","38px");
+    $("#bubble-text-mobile").text("accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ");
+    $("#bubble-title-mobile").text("Basma Elmihy");
+    $("#bubble-sub-title-mobile").text("Operation Manager");  
+  })
+});
+
+$(document).ready(function(){
+  $('#pic5-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
+    document.documentElement.style.setProperty('--custom-bottom', '-15px');    
+    document.documentElement.style.setProperty("--custom-right","150px");
+    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+    $("#bubble-title-mobile").text("Basma Elmihy");
+    $("#bubble-sub-title-mobile").text("Customer Support Specialist");  
+  })
+});
+
+$(document).ready(function(){
+  $('#pic4-mobile').click(function(){
+    $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
+    document.documentElement.style.setProperty('--custom-bottom', '-15px');    
+    document.documentElement.style.setProperty("--custom-right","270px");
+    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
+    $("#bubble-title-mobile").text("Basma Elmihy");
+    $("#bubble-sub-title-mobile").text("Operation Manager");  
+  })
+});
+
 $(document).ready(function(){
   $('#Monthly').click(function(){
     $('#pills-slider').css("transform","translateX(5px)");
@@ -121,6 +188,7 @@ $(document).ready(function(){
   })
 });
 
+//Slider Section
 $(document).ready(function(){
   var slider = document.getElementById("myRange");
   var currentVal = slider.value;

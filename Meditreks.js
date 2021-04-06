@@ -178,7 +178,7 @@ $(document).ready(function(){
     
   })
   $('#Annually').click(function(){
-    $('#pills-slider').css("transform","translateX(205px)");
+    $('#pills-slider').css("transform","translateX(230px)");
     $(this).css("color","white");
     $('#Monthly').css("color","black");
 

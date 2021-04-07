@@ -481,9 +481,7 @@ display: none;
   border: solid 1px #dadada;
   border-radius: 15px;
 }
-.images-container{
-  
-}
+
 .slidecontainer {
   width: 100%;
 }
@@ -539,10 +537,10 @@ display: none;
   font-weight: 700;
 }
 .image1-col {
-  padding-left: 9%;
+  padding-left: 10.5%;
 }
 .image3-col {
-  padding-right: 9%;
+  padding-right: 10.5%;
 }
 
 #delivery-price {
@@ -757,6 +755,13 @@ textarea::placeholder {
   font-size: medium;
   font-weight: 700;
   padding: 8px 20px;
+    }
+
+    .image1-col {
+      padding-left: 5%;
+    }
+    .image3-col {
+      padding-right: 5%;
     }
     /*Section9*/
     #section9{

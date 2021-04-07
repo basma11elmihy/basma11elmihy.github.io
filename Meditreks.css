@@ -3,7 +3,7 @@
   --custom-right: 38px;
   --custom-bottom: -15px;
   --custom-right: 38px;
-  --custom-md-slider:205px;
+  --custom-md-slider:97%;
   --custom-mobile-slider:108%;
 }
 
@@ -451,6 +451,7 @@ display: none;
   right: 0%;
   color: white;
 }
+
 #Monthly {
   left: 0%;
 }
@@ -468,6 +469,7 @@ display: none;
   transition: 0.6s ease transform;
   transform: translateX(var(--custom-md-slider));
 }
+
 .sec8-plus {
   font-weight: 600;
   color: #74aedb;

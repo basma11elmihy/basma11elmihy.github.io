@@ -166,6 +166,7 @@ $(document).ready(function(){
   })
 });
 
+
 $(document).ready(function(){ 
   $('#Monthly').click(function(){
     $('#pills-slider').css("transform","translateX(5px)");
@@ -178,12 +179,11 @@ $(document).ready(function(){
     
   })
   $('#Annually').click(function(){
-    let yearly = "translateX(205px)";
-    let screen = screen.width;
-  if (screen <= 600){
-    alert(screen);
-    yearly = "translateX(132px)";
-  }
+    let yearly = '205px';
+    let screen = $(window).width(); //Samar was here :D 
+    if (screen <= 600)
+    yearly = "132px";
+
     $('#pills-slider').css("transform",`translateX(${yearly})`);
     $(this).css("color","white");
     $('#Monthly').css("color","black");
@@ -193,6 +193,8 @@ $(document).ready(function(){
     $('#discount').css("visibility",'visible');
   })
 });
+
+
 
 //Slider Section
 $(document).ready(function(){
@@ -265,6 +267,6 @@ $(document).ready(function(){
        
 
     } 
-    
+       
     
   })

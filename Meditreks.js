@@ -179,10 +179,10 @@ $(document).ready(function(){
     
   })
   $('#Annually').click(function(){
-    let yearly = '205px';
+    let yearly = '97%';
     let screen = $(window).width(); //Samar was here :D 
     if (screen <= 600)
-    yearly = "132px";
+    yearly = "108%";
 
     $('#pills-slider').css("transform",`translateX(${yearly})`);
     $(this).css("color","white");

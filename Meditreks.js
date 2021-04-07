@@ -180,7 +180,7 @@ $(document).ready(function(){
   })
   $('#Annually').click(function(){
     let yearly = '97%';
-    let screen = $(window).width(); //Samar was here :D 
+    let screen = $(window).width(); 
     if (screen <= 600)
     yearly = "108%";
 
@@ -202,71 +202,115 @@ $(document).ready(function(){
   var currentVal = slider.value;
 
    
-  slider.oninput = () => {
-    if (slider.value >= 55 && slider.value < 75){
-        $('#image-3').css('transform','scale(1.5)');
-        $('#image-2').css('transform','scale(0.9)');
+  // slider.oninput = () => {
+  //   if (slider.value >= 55 && slider.value < 75){
+  //       $('#image-3').css('transform','scale(1.5)');
+  //       $('#image-2').css('transform','scale(0.9)');
         
-        $('#delivery-price').css('opacity','0.5');
-        $('#delivery-number').css('opacity','0.5');
+  //       $('#delivery-price').css('opacity','0.5');
+  //       $('#delivery-number').css('opacity','0.5');
 
-       } 
-      else if (slider.value >= 75 && slider.value < 90){
-        $('#image-3').css('transform','scale(1.7)');
-        $('#image-2').css('transform','scale(0.7)');
+  //      } 
+  //     else if (slider.value >= 75 && slider.value < 90){
+  //       $('#image-3').css('transform','scale(1.7)');
+  //       $('#image-2').css('transform','scale(0.7)');
 
-        $('#delivery-price').css('opacity','0.5');
-        $('#delivery-number').css('opacity','0.5');
+  //       $('#delivery-price').css('opacity','0.5');
+  //       $('#delivery-number').css('opacity','0.5');
 
-        $('#delivery-price').text('$5');
-        $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
-       }
-       else if (slider.value >= 90 && slider.value <= 100){
-        $('#image-3').css('transform','scale(2)');
-        $('#image-2').css('transform','scale(0.6)');
-        $('#delivery-price').css('opacity','1');
-        $('#delivery-number').css('opacity','1');
+  //       $('#delivery-price').text('$5');
+  //       $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
+  //      }
+  //      else if (slider.value >= 90 && slider.value <= 100){
+  //       $('#image-3').css('transform','scale(2)');
+  //       $('#image-2').css('transform','scale(0.6)');
+  //       $('#delivery-price').css('opacity','1');
+  //       $('#delivery-number').css('opacity','1');
 
-        }
-        else if (slider.value >= 50 && slider.value < 55){
-          $('#image-1').css('transform','scale(0.9)');
-          $('#image-3').css('transform','scale(0.9)');
-          $('#image-2').css('transform','scale(1.3)');
+  //       }
+  //       else if (slider.value >= 50 && slider.value < 55){
+  //         $('#image-1').css('transform','scale(0.9)');
+  //         $('#image-3').css('transform','scale(0.9)');
+  //         $('#image-2').css('transform','scale(1.3)');
 
-          $('#delivery-price').css('opacity','1');
-        $('#delivery-number').css('opacity','1');
-        $('#delivery-price').text('$7');
-        $('#delivery-number').text('/ LESS THAN 100 ORDERS');
-        } 
+  //         $('#delivery-price').css('opacity','1');
+  //       $('#delivery-number').css('opacity','1');
+  //       $('#delivery-price').text('$7');
+  //       $('#delivery-number').text('/ LESS THAN 100 ORDERS');
+  //       } 
 
-        else if (slider.value < 45 && slider.value > 35){
-          $('#image-1').css('transform','scale(1.5)');
-          $('#image-2').css('transform','scale(0.9)');
+  //       else if (slider.value < 45 && slider.value > 35){
+  //         $('#image-1').css('transform','scale(1.5)');
+  //         $('#image-2').css('transform','scale(0.9)');
 
-          $('#delivery-price').css('opacity','0.5');
-        $('#delivery-number').css('opacity','0.5');
+  //         $('#delivery-price').css('opacity','0.5');
+  //       $('#delivery-number').css('opacity','0.5');
 
           
   
-         } 
-        else if (slider.value <= 35 && slider.value > 10){
-          $('#image-1').css('transform','scale(1.7)');
-          $('#image-2').css('transform','scale(0.7)');
-          $('#delivery-price').text('$6');
-        $('#delivery-number').text('/ MORE THAN 100 ORDERS');
-         }
-         else if (slider.value <= 10 && slider.value >= 0){
-          $('#image-1').css('transform','scale(2)');
-          $('#image-2').css('transform','scale(0.5)');
+  //        } 
+  //       else if (slider.value <= 35 && slider.value > 10){
+  //         $('#image-1').css('transform','scale(1.7)');
+  //         $('#image-2').css('transform','scale(0.7)');
+  //         $('#delivery-price').text('$6');
+  //       $('#delivery-number').text('/ MORE THAN 100 ORDERS');
+  //        }
+  //        else if (slider.value <= 10 && slider.value >= 0){
+  //         $('#image-1').css('transform','scale(2)');
+  //         $('#image-2').css('transform','scale(0.5)');
 
-          $('#delivery-price').css('opacity','1');
-        $('#delivery-number').css('opacity','1');
+  //         $('#delivery-price').css('opacity','1');
+  //       $('#delivery-number').css('opacity','1');
 
-          }
+  //         }
      
        
 
-    } 
+  //   } 
+
+
+    slider.oninput = () => {
+    
+    
+       if (slider.value == 3){
+          $('#image-3').css('transform','scale(1.1)');
+          $('#image-2').css('transform','scale(0.6)');
+          $('#image-1').css('transform','scale(0.6)');
+          $('#delivery-price').css('opacity','1');
+          $('#delivery-number').css('opacity','1');
+
+          $('#delivery-price').text('$5');
+          $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
+  
+          }
+          else if (slider.value ==2 ){
+            $('#image-1').css('transform','scale(0.6)');
+            $('#image-3').css('transform','scale(0.6)');
+            $('#image-2').css('transform','scale(1.0)');
+  
+            $('#delivery-price').css('opacity','1');
+          $('#delivery-number').css('opacity','1');
+          $('#delivery-price').text('$7');
+          $('#delivery-number').text('/ LESS THAN 100 ORDERS');
+          } 
+  
+    
+           else if (slider.value ==1){
+            $('#image-1').css('transform','scale(1.1)');
+            $('#image-2').css('transform','scale(0.6)');
+            $('#image-3').css('transform','scale(0.6)');
+  
+            $('#delivery-price').css('opacity','1');
+          $('#delivery-number').css('opacity','1');
+
+          $('#delivery-price').text('$6');
+          $('#delivery-number').text('/ MORE THAN 100 ORDERS');
+  
+            }
+       
+         
+  
+      } 
        
     
   })

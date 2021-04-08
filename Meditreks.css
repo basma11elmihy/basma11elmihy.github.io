@@ -425,6 +425,16 @@ display: none;
   margin-bottom: 6%;
 }
 
+#desktop-pricing{
+  display: block;
+}
+#desktop-pricing-text{
+  display: block;
+}
+#mobile-pricing{
+  display: none;
+}
+
 .pill-button {
   background: transparent;
   position: absolute;
@@ -772,6 +782,16 @@ textarea::placeholder {
       transform: translateX(var(--custom-mobile-slider));
     }
 
+    #desktop-pricing{
+      display: none;
+    }
+    #desktop-pricing-text{
+      display: none;
+    }
+    #mobile-pricing{
+      display: block;
+    }
+    
     .price-text {
       text-transform: uppercase;
       text-align: center;

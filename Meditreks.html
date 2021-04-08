@@ -26,9 +26,9 @@
     <section id="section1">
       <div class="main-cover-wrapper">
 
-        <nav class="navbar navbar-expand-lg bg-transparent">
-          <img class="navbar-brand navbar-brand-left" src="./Assets/Meditreks-logo.png" href="#">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg">
+          <img class="navbar-brand navbar-brand-left mr-auto" src="./Assets/Meditreks-logo.png" href="#">
+          <button id= "toggler" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent, #sec1-container" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:white"></i></span>
         </button>
         
@@ -56,9 +56,9 @@
           </div>
         </nav>
       
-          <div class="container">
+          <div id="sec1-container" class="container collapse show">
             <div class="row" >
-              <div class="col-md-6 mr-auto">
+              <div class="col-md-6 align-self-center mr-auto">
                 <p id="right-main-text">
                       Meet the 
                       demands of 
@@ -169,11 +169,11 @@
   </div> 
 
       <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner sec3-carousel">
           <div class="carousel-item active">
             <img src="./Assets/masked-man.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption">
-              <h4 class="section3-mobile-heading">Happy Customers</h4>     
+              <h2 class="section3-mobile-heading">Happy Customers</h2>     
               <p class="section3-mobile-subheading">We deliver to your customers throught the day, when the're home and when they need their medication.</p> 
             </div> 
           
@@ -181,15 +181,15 @@
           <div class="carousel-item">
             <img src="./Assets/masked-man.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption">
-              <h4 class="section3-mobile-heading">Stress Free</h4>     
-              <p class="section3-mobile-subheading">No more phone calls! Manage and track everything from your online dashboard.</p> 
+              <h2 class="section3-mobile-heading">Stress Free</h2>     
+              <p class="section3-mobile-subheading">No more phone calls! Manage and track everything from your online dashboard. We included it all!</p> 
             </div>  
           
           </div>
           <div class="carousel-item">
             <img src="./Assets/masked-man.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption">
-              <h4 class="section3-mobile-heading">Auditability</h4>     
+              <h2 class="section3-mobile-heading">Auditability</h2>     
               <p class="section3-mobile-subheading">We keep records of everything! You don't have to worry about viewing all of your history online.</p> 
             </div>  
           
@@ -508,10 +508,10 @@
                 <div class="sec8-sec-container">
                 <div class="row justify-content-center">
                 <div class="col-10 col-md-5 pills-container d-flex flex-row m-0 p-0">
-                  <div type="button" id="pills-slider"></div>
+                  <div class="row" type="button" id="pills-slider"></div>
 
-                  <button type="button" class="btn pill-button" id="Annually">Annually</button>
-                  <button type="button" class="btn pill-button" id="Monthly">Monthly</button>    
+                  <button type="button" class="col-6 mr-3 btn pill-button" id="Annually">Annually</button>
+                  <button type="button" class="col-6 ml-2 btn pill-button" id="Monthly">Monthly</button>    
                 </div>
               </div>
 
@@ -530,8 +530,13 @@
                 <h1 class="sec8-plus text-center">+</h1>
 <div class="sec8-sec-container">
 
+  <div class="text-center py-5 pr-md-5">
+    <h3 class="section8-added-heading">Pricing By Delivery Volume</h3>
+  </div> 
               <div class="py-5">
-                <div class="container-fluid">
+               
+                <div class="pt-4 container-fluid">
+                 
                   <div class="row images-container mx-2">
                 <div class="image1-col col-4">
                   <img id="image-1" class="price-image mr-auto img-fluid d-block rounded-circle" src="https://static.pingendo.com/img-placeholder-3.svg" width="100" ></div>
@@ -553,14 +558,14 @@
 <div class="py-1">
             <div class="container-fluid">
               <div class="row d-flex flex-row justify-content-between">
-                <div class="col-4 col-md-3 mr-md-5 pr-md-5">
-                  <h4  class="price-text">Large</h4>
+                <div class="col-4 col-md-4">
+                  <h4  class="price-text">10 - 100 Deliveries / Month</h4>
                 </div>
-                <div class="col-4 col-md-3">
-                  <h4 class="price-text">Small</h4>
+                <div class="col-4 col-md-4">
+                  <h4 class="price-text"> 101 - 500 Deliveries / Month</h4>
                 </div>
-                <div class="col-4 col-md-3 ml-md-5 pl-md-5" >
-                  <h4 class="price-text">Mega</h4>
+                <div class="col-4 col-md-4" >
+                  <h4 class="price-text">500+ Deliveries / Month</h4>
                 </div>
               </div>
             </div>
@@ -569,7 +574,7 @@
 
           <div class="mt-5 d-flex flex-row justify-content-center mb-5">
             <h1 id="delivery-price" class="section-heading mr-3">$7</h1>
-            <h4 id="delivery-number" class="align-bottom align-items-end d-flex mb-4 ms-3" >/ LESS THAN 100 ORDER</h4>
+            <h4 id="delivery-number" class="align-bottom align-items-end d-flex mb-4 ms-3" >/ PER DELIVERY</h4>
           </div>
               <div class="px-5 mx-5 row justify-content-center mb-5">
                 <div class="slidecontainer mb-5">

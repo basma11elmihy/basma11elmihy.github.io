@@ -280,7 +280,7 @@ $(document).ready(function(){
           $('#delivery-number').css('opacity','1');
 
           $('#delivery-price').text('$5');
-          $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
+          // $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
   
           }
           else if (slider.value ==2 ){
@@ -291,7 +291,7 @@ $(document).ready(function(){
             $('#delivery-price').css('opacity','1');
           $('#delivery-number').css('opacity','1');
           $('#delivery-price').text('$7');
-          $('#delivery-number').text('/ LESS THAN 100 ORDERS');
+          // $('#delivery-number').text('/ LESS THAN 100 ORDERS');
           } 
   
     
@@ -304,7 +304,7 @@ $(document).ready(function(){
           $('#delivery-number').css('opacity','1');
 
           $('#delivery-price').text('$6');
-          $('#delivery-number').text('/ MORE THAN 100 ORDERS');
+          // $('#delivery-number').text('/ MORE THAN 100 ORDERS');
   
             }
        

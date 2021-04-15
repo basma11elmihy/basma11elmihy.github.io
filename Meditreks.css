@@ -179,6 +179,10 @@ display: none;
   padding-bottom: 2%;
 }
 
+.carousel-item > img {
+  height: auto;
+}
+
 /*section4*/
 
 #section4 {
@@ -555,6 +559,10 @@ display: none;
 }
 .image3-col {
   padding-right: 10.5%;
+}
+
+#image-2{
+  transform: scale(1.5);
 }
 
 #delivery-price {

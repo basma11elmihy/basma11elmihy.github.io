@@ -562,7 +562,7 @@ display: none;
 }
 
 #image-2{
-  transform: scale(1.5);
+  transform: scale(1.7);
 }
 
 #delivery-price {
@@ -596,6 +596,13 @@ display: none;
   font-weight: 700;
   text-decoration: line-through;
   text-align: center;
+}
+#free-trial{
+  color: #fa9273;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+  text-transform: capitalize;
 }
 /*Section9*/
 #section9 {

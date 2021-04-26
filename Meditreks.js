@@ -240,13 +240,13 @@ $(document).ready(function(){
         $('#delivery-price').text('$5');
   
         }
-        else if (slider.value ==2 ){
+        else if (slider.value ==1 ){
           $('#price-img-mobile').attr('src','./Assets/Small.png');
           $('#price-img-mobile').css('padding-top','0px');
           $('#price-text-mobile').text('1 - 350 Deliveries / Month');
           $('#delivery-price').text('$7');
         } 
-        else if (slider.value ==1){
+        else if (slider.value ==2){
           $('#price-img-mobile').attr('src','./Assets/Large.png');
           $('#price-img-mobile').css('padding-top','30px');
           $('#price-text-mobile').text('351 - 700 Deliveries / Month');  

@@ -466,7 +466,7 @@ display: none;
 }
 
 #Annually {
-  right: -3px;
+  right: -7px;
   color: white;
 }
 
@@ -790,7 +790,7 @@ textarea::placeholder {
 
     /*section8*/
     #pills-slider {
-      padding: 15px;
+      padding: 20px;
       margin: 2px 0px;
       width: 47%;
       background: #74aedb;
@@ -816,10 +816,10 @@ textarea::placeholder {
     }
 
     .pill-button{
-      top: -2px;
-  font-size: medium;
-  font-weight: 700;
-  padding: 8px 20px;
+      top: 3px;
+      font-size: medium;
+      font-weight: 700;
+      padding: 8px 20px;
     }
 
     .image1-col {

@@ -34,13 +34,42 @@ jQuery(function($) {
 
 // Testimonials Section 
 $(document).ready(function(){
+  let right1 = "37%";
+  let right2 = "28.5%";
+  let right3 = "17%";
+  let right4 = "11%";
+  let right5= "43%";
+  let right6 = "38%";
+
+
+  if ($(window).width() >= 1500 && $(window).width() < 1700 ){
+    right1 = "39%";
+    right2 = "26%";
+    right3 = "21%";
+    right6 = "35%";
+  }
+
+  else if ($(window).width() >= 1700 && $(window).width() < 2000){
+    right1 = "41%";
+    right2 = "23%";
+    right3 = "26%";
+    right6 = "31%";
+  }
+  else if ($(window).width() >= 2000){
+    right1 = "42%";
+    right2 = "21%";
+    right3 = "29%";
+    right6 = "27%";
+  }
+
+$(document).ready(function(){
   $('#pic-one').click(function(){
     $("#bubble").removeClass( "left" ).addClass( "right" );
     $("#bubble").css("top","-5%");
-    $("#bubble").css("right","37%");
-    $("#bubble-text").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title").text("Jasi Toor");
-    $("#bubble-sub-title").text("CEO");  
+    $("#bubble").css("right",right1);
+    $("#bubble-text").text("Treks - The most efficient, timely and reliable service as demanded by my pharmacy clientele. I would highly recommend for its performance and trustworthiness.");
+    $("#bubble-title").text("Yasmin Kanji");
+    $("#bubble-sub-title").text("Shoppers Drug Mart - Kingsland Plaza");  
   })
 });
 
@@ -48,10 +77,10 @@ $(document).ready(function(){
   $('#pic-two').click(function(){
     $("#bubble").removeClass( "right" ).addClass( "left" );
     $("#bubble").css("top","16%");
-    $("#bubble").css("right","28.5%");
-    $("#bubble-text").text("Extensive delivery proofs, intelligent AI location identification, reciepent access protocols We've built it all in!");
-    $("#bubble-title").text("Muhammed Maksoud");
-    $("#bubble-sub-title").text("Product Designer");  
+    $("#bubble").css("right",right2);
+    $("#bubble-text").text("I have been working with cabtreks for almost 2 years, it is an awesome and professional service. They mke sure all items are safely delivered . I am highly satisfied with the service they provide. they are very professional, friendly, and efficient. The team is so professional in handling any issues. I will definitely recommend to others.");
+    $("#bubble-title").text("Amira");
+    $("#bubble-sub-title").text("Chaparral Pharmacy");  
   })
 });
 
@@ -59,10 +88,10 @@ $(document).ready(function(){
   $('#pic-three').click(function(){
     $("#bubble").removeClass( "left" ).addClass( "right" );
     $("#bubble").css("top","15%");
-    $("#bubble").css("right","17%");
-    $("#bubble-text").text("Extensive delivery proofs, intelligent AI location identification, reciepent access protocols We've built it all in!");
-    $("#bubble-title").text("Basma Elmihy");
-    $("#bubble-sub-title").text("Operation Manager");  
+    $("#bubble").css("right",right3);
+    $("#bubble-text").text("We’ve been very happy with Cabtreks since we switched over. They are always available for us, as well their service is reliable with competitive pricing. I would not hesitate to recommend them to my colleagues.");
+    $("#bubble-title").text("Sharon Wong");
+    $("#bubble-sub-title").text("Shoppers Drug Mart - Shawnessy Towne Centre");  
   })
 });
 
@@ -70,10 +99,10 @@ $(document).ready(function(){
   $('#pic-four').click(function(){
     $("#bubble").removeClass( "right" ).addClass( "left" );
     $("#bubble").css("top","36%");
-    $("#bubble").css("right","11%");
-    $("#bubble-text").text("Extensive delivery proofs, intelligent AI location identification, reciepent access protocols We've built it all in!");
-    $("#bubble-title").text("Basma Elmihy");
-    $("#bubble-sub-title").text("Operation Manager");  
+    $("#bubble").css("right",right4);
+    $("#bubble-text").text("Treks is very convenient, always on time and modelling fantastic customer care, our team has been extremely happy with their services.");
+    $("#bubble-title").text("Maher Al Mouselly");
+    $("#bubble-sub-title").text("Shoppers Drug Mart - Mahogany Plaza");  
   })
 });
 
@@ -81,10 +110,10 @@ $(document).ready(function(){
   $('#pic-five').click(function(){
     $("#bubble").removeClass( "left" ).addClass( "right" );
     $("#bubble").css("top","36%");
-    $("#bubble").css("right","43%");
-    $("#bubble-text").text("Extensive delivery proofs, intelligent AI location identification!");
-    $("#bubble-title").text("Basma Elmihy");
-    $("#bubble-sub-title").text("Customer Support Specialist");  
+    $("#bubble").css("right",right5);
+    $("#bubble-text").text("Treks has been an awesome addition to our delivery service in this busy pandemic time. The app is very user friendly and keeps track of all the customers for a very fast convenient procedure. Finally, the delivery rates are very competitive and offer delivery anywhere in Calgary at unbeatable price.");
+    $("#bubble-title").text("Rob Heaton (B.Sc. Pharm)");
+    $("#bubble-sub-title").text("Cambrian Pharmacy");  
   })
 });
 
@@ -92,11 +121,13 @@ $(document).ready(function(){
   $('#pic-six').click(function(){
     $("#bubble").removeClass( "right" ).addClass( "left" );
     $("#bubble").css("top","58%");
-    $("#bubble").css("right","38%");
-    $("#bubble-text").text("Extensive delivery proofs, intelligent AI location identification, reciepent access protocols We've built it all in! Extensive delivery proofs, intelligent AI location identification, reciepent access protocols We've built it all in!");
-    $("#bubble-title").text("Basma Elmihy");
-    $("#bubble-sub-title").text("Front-End Developer");  
+    $("#bubble").css("right",right6);
+    $("#bubble-text").text("Great leadership from the team, excellent support and rapid responses when issues arise.");
+    $("#bubble-title").text("Amani Chehade");
+    $("#bubble-sub-title").text("Shoppers Drug Mart - Aspen Landing");  
   })
+});
+
 });
 
 //Testimonials Mobile-Section
@@ -105,9 +136,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
     document.documentElement.style.setProperty("--custom-right","38px");
-    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title-mobile").text("Jasi Toor");
-    $("#bubble-sub-title-mobile").text("CEO");  
+    $("#bubble-text-mobile").text("Treks - The most efficient, timely and reliable service as demanded by my pharmacy clientele. I would highly recommend for its performance and trustworthiness.");
+    $("#bubble-title-mobile").text("Yasmin Kanji");
+    $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Kingsland Plaza");  
   })
 });
 
@@ -116,9 +147,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
     document.documentElement.style.setProperty("--custom-right","150px");
-    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title-mobile").text("Basma Elmihy");
-    $("#bubble-sub-title-mobile").text("Front End Developer");  
+    $("#bubble-text-mobile").text("I have been working with cabtreks for almost 2 years, it is an awesome and professional service. They mke sure all items are safely delivered . I am highly satisfied with the service they provide. they are very professional, friendly, and efficient. The team is so professional in handling any issues. I will definitely recommend to others.");
+    $("#bubble-title-mobile").text("Amira");
+    $("#bubble-sub-title-mobile").text("Chaparral Pharmacy");  
   })
 });
 
@@ -127,9 +158,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
     document.documentElement.style.setProperty("--custom-right","270px");
-    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title-mobile").text("Muhammed Maksoud");
-    $("#bubble-sub-title-mobile").text("Product Designer");  
+    $("#bubble-text-mobile").text("We’ve been very happy with Treks since we switched over. They are always available for us, as well their service is reliable with competitive pricing. I would not hesitate to recommend them to my colleagues.");
+    $("#bubble-title-mobile").text("Sharon Wong");
+    $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Shawnessy Towne Centre");  
   })
 });
 
@@ -138,9 +169,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
     document.documentElement.style.setProperty("--custom-right","38px");
-    $("#bubble-text-mobile").text("accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi ");
-    $("#bubble-title-mobile").text("Basma Elmihy");
-    $("#bubble-sub-title-mobile").text("Operation Manager");  
+    $("#bubble-text-mobile").text("Treks is very convenient, always on time and modelling fantastic customer care, our team has been extremely happy with their services.");
+    $("#bubble-title-mobile").text("Maher Al Mouselly");
+    $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Mahogany Plaza");  
   })
 });
 
@@ -149,9 +180,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
     document.documentElement.style.setProperty("--custom-right","150px");
-    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title-mobile").text("Basma Elmihy");
-    $("#bubble-sub-title-mobile").text("Customer Support Specialist");  
+    $("#bubble-text-mobile").text("Cabtreks has been an awesome addition to our delivery service in this busy pandemic time. The app is very user friendly and keeps track of all the customers for a very fast convenient procedure. Finally, the delivery rates are very competitive and offer delivery anywhere in Calgary at unbeatable price.");
+    $("#bubble-title-mobile").text("Rob Heaton (B.Sc. Pharm)");
+    $("#bubble-sub-title-mobile").text("Cambrian Pharmacy");  
   })
 });
 
@@ -160,9 +191,9 @@ $(document).ready(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
     document.documentElement.style.setProperty("--custom-right","270px");
-    $("#bubble-text-mobile").text("Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
-    $("#bubble-title-mobile").text("Basma Elmihy");
-    $("#bubble-sub-title-mobile").text("Operation Manager");  
+    $("#bubble-text-mobile").text("Great leadership from the team, excellent support and rapid responses when issues arise.");
+    $("#bubble-title-mobile").text("Amani Chehade");
+    $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Aspen Landing");  
   })
 });
 
@@ -205,20 +236,20 @@ $(document).ready(function(){
       if (slider.value == 3){
         $('#price-img-mobile').attr('src','./Assets/Mega.png');
         $('#price-img-mobile').css('padding-top','0px');
-        $('#price-text-mobile').text('500+ Deliveries / Month');
+        $('#price-text-mobile').text('700+ Deliveries / Month');
         $('#delivery-price').text('$5');
   
         }
         else if (slider.value ==2 ){
           $('#price-img-mobile').attr('src','./Assets/Small.png');
           $('#price-img-mobile').css('padding-top','0px');
-          $('#price-text-mobile').text('10 - 100 Deliveries / Month');
+          $('#price-text-mobile').text('1 - 350 Deliveries / Month');
           $('#delivery-price').text('$7');
         } 
         else if (slider.value ==1){
           $('#price-img-mobile').attr('src','./Assets/Large.png');
           $('#price-img-mobile').css('padding-top','30px');
-          $('#price-text-mobile').text('101 - 500 Deliveries / Month');  
+          $('#price-text-mobile').text('351 - 700 Deliveries / Month');  
           $('#delivery-price').text('$6');
 
         }  

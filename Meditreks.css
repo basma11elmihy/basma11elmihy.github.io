@@ -673,7 +673,7 @@ textarea::placeholder {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .navbar{
     padding-right: 25px;
     padding-left: 0px;  
@@ -879,11 +879,29 @@ textarea::placeholder {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (max-width: 992px) {
+  
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
+  
+}
 
+@media only screen and (min-width: 1500px) {
+  #bubble{
+    right:39% ;
+  }
+}
+
+@media only screen and (min-width: 1700px) {
+  #bubble{
+    right:41% ;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  #bubble{
+    right:42% ;
+  }
 }

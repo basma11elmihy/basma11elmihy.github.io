@@ -485,7 +485,7 @@ display: none;
   background: #74aedb;
   border-radius: 500px;
   transition: 0.6s ease transform;
-  transform: translateX(var(--custom-md-slider));
+  /* transform: translateX(var(--custom-md-slider)); */
 }
 
 .sec8-plus {

@@ -32,6 +32,21 @@ jQuery(function($) {
   });
 
 
+//navbar edit
+
+jQuery(function($) {
+  if ($(window).width() >= 768 && $(window).width() < 992 ){
+    $(".nav-class").removeClass("navbar-expand-lg");
+    $(".nav-class").addClass("navbar-expand-md");
+  }
+  else{
+    if ($(window).width() >= 768 && $(window).width() < 992 ){
+      $(".nav-class").addClass("navbar-expand-lg");
+      $(".nav-class").removeClass("navbar-expand-md");
+    }
+  }
+});
+
 // Testimonials Section 
 $(document).ready(function(){
   let right1 = "37%";

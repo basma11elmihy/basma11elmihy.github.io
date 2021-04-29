@@ -931,6 +931,11 @@ textarea::placeholder {
     text-shadow: none;
 
   }
+
+  /*Section4*/
+  .card-section4{
+    height: auto;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */

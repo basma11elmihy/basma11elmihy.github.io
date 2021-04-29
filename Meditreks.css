@@ -940,6 +940,23 @@ textarea::placeholder {
   .section5-sub-heading {
     font-size: 20px;
   }
+
+
+  /*section8*/
+  #pills-slider {
+    padding: 20px;
+    margin: 2px 0px;
+    width: 47%;
+    background: #74aedb;
+    transform: translateX(var(--custom-mobile-slider));
+  }
+
+  .pill-button{
+    top: 3px;
+    font-size: medium;
+    font-weight: 700;
+    padding: 8px 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -961,6 +978,22 @@ textarea::placeholder {
 
 .section5-sub-heading {
   font-size: 20px;
+}
+
+ /*section8*/
+ #pills-slider {
+  padding: 20px;
+  margin: 2px 0px;
+  width: 47%;
+  background: #74aedb;
+  transform: translateX(var(--custom-mobile-slider));
+}
+
+.pill-button{
+  top: 3px;
+  font-size: medium;
+  font-weight: 700;
+  padding: 8px 20px;
 }
 
 }

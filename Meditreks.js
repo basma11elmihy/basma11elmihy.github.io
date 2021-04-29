@@ -150,7 +150,7 @@ $(document).ready(function(){
   $('#pic1-mobile').click(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
-    document.documentElement.style.setProperty("--custom-right","38px");
+    document.documentElement.style.setProperty("--custom-right","15%");
     $("#bubble-text-mobile").text("Treks - The most efficient, timely and reliable service as demanded by my pharmacy clientele. I would highly recommend for its performance and trustworthiness.");
     $("#bubble-title-mobile").text("Yasmin Kanji");
     $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Kingsland Plaza");  
@@ -161,7 +161,7 @@ $(document).ready(function(){
   $('#pic2-mobile').click(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
-    document.documentElement.style.setProperty("--custom-right","150px");
+    document.documentElement.style.setProperty("--custom-right","45%");
     $("#bubble-text-mobile").text("I have been working with cabtreks for almost 2 years, it is an awesome and professional service. They mke sure all items are safely delivered . I am highly satisfied with the service they provide. they are very professional, friendly, and efficient. The team is so professional in handling any issues. I will definitely recommend to others.");
     $("#bubble-title-mobile").text("Amira");
     $("#bubble-sub-title-mobile").text("Chaparral Pharmacy");  
@@ -172,7 +172,7 @@ $(document).ready(function(){
   $('#pic3-mobile').click(function(){
     $("#bubble-mobile").removeClass( "bottom" ).addClass( "top" );
     document.documentElement.style.setProperty('--custom-top', '-14px');    
-    document.documentElement.style.setProperty("--custom-right","270px");
+    document.documentElement.style.setProperty("--custom-right","80%");
     $("#bubble-text-mobile").text("We’ve been very happy with Treks since we switched over. They are always available for us, as well their service is reliable with competitive pricing. I would not hesitate to recommend them to my colleagues.");
     $("#bubble-title-mobile").text("Sharon Wong");
     $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Shawnessy Towne Centre");  
@@ -183,7 +183,7 @@ $(document).ready(function(){
   $('#pic6-mobile').click(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
-    document.documentElement.style.setProperty("--custom-right","38px");
+    document.documentElement.style.setProperty("--custom-right","15%");
     $("#bubble-text-mobile").text("Treks is very convenient, always on time and modelling fantastic customer care, our team has been extremely happy with their services.");
     $("#bubble-title-mobile").text("Maher Al Mouselly");
     $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Mahogany Plaza");  
@@ -194,7 +194,7 @@ $(document).ready(function(){
   $('#pic5-mobile').click(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
-    document.documentElement.style.setProperty("--custom-right","150px");
+    document.documentElement.style.setProperty("--custom-right","45%");
     $("#bubble-text-mobile").text("Cabtreks has been an awesome addition to our delivery service in this busy pandemic time. The app is very user friendly and keeps track of all the customers for a very fast convenient procedure. Finally, the delivery rates are very competitive and offer delivery anywhere in Calgary at unbeatable price.");
     $("#bubble-title-mobile").text("Rob Heaton (B.Sc. Pharm)");
     $("#bubble-sub-title-mobile").text("Cambrian Pharmacy");  
@@ -205,7 +205,7 @@ $(document).ready(function(){
   $('#pic4-mobile').click(function(){
     $("#bubble-mobile").removeClass( "top" ).addClass( "bottom" );
     document.documentElement.style.setProperty('--custom-bottom', '-15px');    
-    document.documentElement.style.setProperty("--custom-right","270px");
+    document.documentElement.style.setProperty("--custom-right","80%");
     $("#bubble-text-mobile").text("Great leadership from the team, excellent support and rapid responses when issues arise.");
     $("#bubble-title-mobile").text("Amani Chehade");
     $("#bubble-sub-title-mobile").text("Shoppers Drug Mart - Aspen Landing");  

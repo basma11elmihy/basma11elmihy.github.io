@@ -936,6 +936,10 @@ textarea::placeholder {
   .card-section4{
     height: auto;
   }
+
+  .section5-sub-heading {
+    font-size: 20px;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -948,6 +952,17 @@ textarea::placeholder {
 
   .section3-heading {
     font-size: 30px; 
+}
+
+/*Section4*/
+.card-section4{
+  height: 55vh;
+}
+
+.section5-sub-heading {
+  font-size: 20px;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

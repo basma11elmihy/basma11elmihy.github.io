@@ -941,6 +941,11 @@ textarea::placeholder {
     font-size: 20px;
   }
 
+  /*Section7*/
+  .f-row{
+    margin: 10px 0px;
+  }
+
 
   /*section8*/
   #pills-slider {
@@ -976,9 +981,19 @@ textarea::placeholder {
   height: 55vh;
 }
 
+.section4-heading {
+  font-size: 35px;
+}
+
 .section5-sub-heading {
   font-size: 20px;
 }
+
+/*Section7*/
+.f-row{
+  margin: 10px 0px;
+}
+
 
  /*section8*/
  #pills-slider {

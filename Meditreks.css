@@ -204,9 +204,15 @@ display: none;
   border: solid 1px #dadada;
   border-radius: 15px;
   padding: 8%;
-  height: 65vh;
+  height: 420px;
   margin: 5% 5%;
+  transition: 0.7s ease-out box-shadow;
 }
+
+.card-section4:hover{
+  box-shadow: 10px 10px 45px #dadada;
+}
+
 
 .card-img-left {
   content: url("./Assets/security-icon.png");
@@ -231,11 +237,17 @@ display: none;
 /*Section5*/
 
 .card-section5 {
-  box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.04);
+  box-shadow: 4px 4px 16px 4px rgba(0, 0, 0, 0.05);
   border-radius: 15px;
   padding: 2% 8%;
-  border: 0px;
+  border: 1px;
+  border-color: #dadada;
   margin-top: 5%;
+  transition: 0.7s ease-out box-shadow;
+}
+
+.card-section5:hover{
+  box-shadow: 20px 20px 30px #dadada;
 }
 
 .sec5-headers {
@@ -413,18 +425,56 @@ display: none;
 .f-text {
   color: black;
   font-weight: 900;
-  font-size: large;
+  font-size: medium;
   margin: 0px;
   padding: 0px;
   text-transform: uppercase;
 }
-
-.f-row {
+.f-row{
+  margin: 10px 0px;
+  height: 110px; 
+  padding: 0px 20px;
   border: 1px solid;
   border-radius: 80px;
   border-color: #74aedb;
-  margin-right: 20px;
+  transition: 0.7s ease-out box-shadow;
 }
+
+.f-row:hover{
+  box-shadow: 10px 10px 45px #dadada;
+}
+#signature{
+  width: 90px !important;
+}
+
+#camera{
+  width: 70px !important;    
+}
+#report{
+  width: 60px !important;
+}
+
+#notifications{
+  width: 60px !important;
+}
+#qrcode{
+  width: 60px !important;
+}
+
+#tracking{
+  width: 70px !important;
+}
+#copay{
+  width: 90px !important;
+}
+#return{
+  width: 110px !important;
+}
+#support{
+  width: 60px !important;
+}
+
+
 /*Section8*/
 
 #section8 {
@@ -675,8 +725,8 @@ textarea::placeholder {
   background-color: #74aedb;
 }
 
-/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 767px) {
+
   .navbar{
     padding-right: 25px;
     padding-left: 0px;  
@@ -783,11 +833,6 @@ textarea::placeholder {
       color: #74aedb;
     }
    
-    /*Section7*/
-    .f-row{
-      margin: 10px 0px;
-    }
-
     /*section8*/
     #pills-slider {
       padding: 20px;
@@ -866,11 +911,6 @@ textarea::placeholder {
 
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
- 
-
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -940,13 +980,7 @@ textarea::placeholder {
   .section5-sub-heading {
     font-size: 20px;
   }
-
-  /*Section7*/
-  .f-row{
-    margin: 10px 0px;
-  }
-
-
+  
   /*section8*/
   #pills-slider {
     padding: 20px;
@@ -976,11 +1010,6 @@ textarea::placeholder {
     font-size: 30px; 
 }
 
-/*Section4*/
-.card-section4{
-  height: 55vh;
-}
-
 .section4-heading {
   font-size: 35px;
 }
@@ -988,12 +1017,6 @@ textarea::placeholder {
 .section5-sub-heading {
   font-size: 20px;
 }
-
-/*Section7*/
-.f-row{
-  margin: 10px 0px;
-}
-
 
  /*section8*/
  #pills-slider {
@@ -1015,6 +1038,7 @@ textarea::placeholder {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1200px) {
+
   
 }
 
@@ -1022,6 +1046,7 @@ textarea::placeholder {
   #bubble{
     right:39% ;
   }
+
 }
 
 @media only screen and (min-width: 1700px) {

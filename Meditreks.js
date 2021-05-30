@@ -275,11 +275,17 @@ $(document).ready(function(){
       $('#image-3').css('transform','scale(1.7)');
       $('#image-2').css('transform','scale(1.0)');
       $('#image-1').css('transform','scale(1.0)');
-      // $('#delivery-price').css('opacity','1');
-      // $('#delivery-number').css('opacity','1');
+
+      $('#image-3').css('opacity','1');
+      $('#image-2').css('opacity','0.5');
+      $('#image-1').css('opacity','0.5');
+
+      $('#smallText').css('opacity','0.5');
+      $('#mediumText').css('opacity','0.5');
+      $('#largeText').css('opacity','1');
+ 
 
       $('#delivery-price').text('$5');
-      // $('#delivery-number').text('/ MORE THAN 1000 ORDERS');
 
       }
       else if (slider.value ==2 ){
@@ -287,21 +293,31 @@ $(document).ready(function(){
         $('#image-3').css('transform','scale(1.0)');
         $('#image-2').css('transform','scale(1.7)');
 
-      //   $('#delivery-price').css('opacity','1');
-      // $('#delivery-number').css('opacity','1');
+        $('#image-3').css('opacity','0.5');
+        $('#image-2').css('opacity','1');
+        $('#image-1').css('opacity','0.5');
+
+        $('#smallText').css('opacity','0.5');
+        $('#mediumText').css('opacity','1');
+        $('#largeText').css('opacity','0.5');
+     
       $('#delivery-price').text('$6');
-      // $('#delivery-number').text('/ LESS THAN 100 ORDERS');
       } 
       else if (slider.value ==1){
         $('#image-1').css('transform','scale(1.7)');
         $('#image-2').css('transform','scale(1.0)');
         $('#image-3').css('transform','scale(1.0)');
 
-      //   $('#delivery-price').css('opacity','1');
-      // $('#delivery-number').css('opacity','1');
+        $('#image-3').css('opacity','0.5');
+        $('#image-2').css('opacity','0.5');
+        $('#image-1').css('opacity','1');
 
+        $('#smallText').css('opacity','1');
+        $('#mediumText').css('opacity','0.5');
+        $('#largeText').css('opacity','0.5');
+
+  
       $('#delivery-price').text('$7');
-      // $('#delivery-number').text('/ MORE THAN 100 ORDERS');
 
       }  
     }       

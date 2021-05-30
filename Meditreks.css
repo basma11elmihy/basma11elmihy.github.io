@@ -16,15 +16,15 @@ body {
 
 #section1{
   background-image: linear-gradient(
-    rgba(116, 174, 219, 0.65),
-    rgba(116, 174, 219, 0.65)
+    rgba(116, 174, 219, 0.48),
+    rgba(116, 174, 219, 0.48)
   ),
   url("./Assets/mainCover.jpg");
 
 background-repeat: no-repeat;
 width: 100%;
 background-size: cover;
-background-position: bottom;
+background-position: center;
 }
 
 .navbar{
@@ -36,6 +36,8 @@ background-position: bottom;
 .navbar-brand-left {
   width: 25%;
   height: 25%;
+  padding: 20px 20px;
+
 }
 
 .main-cover-wrapper {
@@ -45,6 +47,7 @@ background-position: bottom;
 .main-cover-wrapper > .container {
   margin-top: 9%;
 }
+
 .nav-link {
   font-size: 15px;
   color: white;
@@ -75,12 +78,13 @@ background-position: bottom;
 }
 
 #right-main-text {
-  text-align: left;
+  text-align: center;
   font-size: 50px;
   color: white;
   line-height: 1.1;
   text-transform: uppercase;
   font-weight: 900;
+  margin-bottom: 75px;
 }
 
 #left-main-text {
@@ -104,6 +108,7 @@ background-position: bottom;
 
 #section3{
   display: block;
+  margin-top: 100px;
 }
 
 #section3-mobile{
@@ -516,6 +521,8 @@ display: none;
   align-self: center;
   padding: 12px 48px;
   border-radius: 50px;
+  outline: none !important;
+
 }
 
 #Annually {
@@ -596,6 +603,23 @@ display: none;
   max-width: 60%;
 }
 
+#smallText{
+opacity: 0.5;
+transition: 0.7s ease opacity;
+
+
+}
+#mediumText{
+  opacity: 1;
+  transition: 0.7s ease opacity;
+
+}
+#largeText{
+  opacity: 0.5;
+  transition: 0.7s ease opacity;
+
+}
+
 .price-text {
   text-transform: uppercase;
   text-align: center;
@@ -616,6 +640,14 @@ display: none;
 
 #image-2{
   transform: scale(1.7);
+}
+
+#image-1{
+  opacity: 0.5;
+}
+
+#image-3{
+  opacity: 0.5;
 }
 
 #delivery-price {
@@ -735,7 +767,6 @@ textarea::placeholder {
   .navbar-brand-left {
     width: 200px;
     height: auto;
-    margin-left: -15px;
   }
 
   .main-cover-wrapper > .container {

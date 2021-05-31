@@ -761,6 +761,7 @@ textarea::placeholder {
   background-color: #74aedb;
 }
 
+
 @media only screen and (max-width: 767px) {
 
   .navbar{
@@ -771,6 +772,10 @@ textarea::placeholder {
   .navbar-brand-left {
     width: 200px;
     height: auto;
+  }
+
+  .main-cover-wrapper{
+    margin-bottom: 45px;
   }
 
   .main-cover-wrapper > .container {
@@ -786,11 +791,17 @@ textarea::placeholder {
   #right-main-text {
     font-size: 30px;
     font-weight: 700;
+    margin-bottom: 0;
+    padding: 0 0px;
   }
   
   #left-main-text {
     font-size: 16px;
     color: white;
+  }
+
+  .section-sub-heading-only{
+    padding: 1% 6%;
   }
   
   /*Section3*/
@@ -946,6 +957,14 @@ textarea::placeholder {
 
 }
 
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  #right-main-text {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 0 0px;
+  }
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -968,6 +987,13 @@ textarea::placeholder {
     margin-top: 40px;
 
   }
+
+  .section-sub-heading-only{
+    padding: 1% 15%;
+  }
+
+ 
+  
 
   /*Section3*/
 

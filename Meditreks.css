@@ -11,13 +11,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll !important;
 }
 
 #section1{
   background-image: linear-gradient(
-    rgba(116, 174, 219, 0.48),
-    rgba(116, 174, 219, 0.48)
+       rgba(108, 122, 137, 0.65),rgba(108, 122, 137, 0.65)
   ),
   url("./Assets/mainCover.jpg");
 
@@ -28,15 +28,28 @@ background-position: center;
 }
 
 .navbar{
-  padding-top: 15px;
+  padding-top: 25px;
   padding-right: 70px;
   padding-left: 70px;
+}
+
+.navbar-brand-arrow{
+  margin-top: -20px;
+  margin-right: 2px;
+  margin-left: -12px;
+  transform: scale(0.5);
+}
+
+.navbar-brand-arrow-top{
+  margin-right: 2px;
+  margin-left: -12px;
+  transform: scale(0.5);
 }
 
 .navbar-brand-left {
   width: 25%;
   height: 25%;
-  padding: 20px 20px;
+  padding: 0px 0px;
 
 }
 
@@ -67,8 +80,8 @@ background-position: center;
 }
 
 .signup-nav {
-  color: black;
-  background-color: white;
+  color: white;
+  background-color:#74aedb;
   font-size: small;
   font-weight: 700;
   padding: 12px 65px;
@@ -96,7 +109,7 @@ background-position: center;
 
 /*section2*/
 
-#section2 {
+ #section2 {
   padding-top: 6%;
   padding-bottom: 6%;
 }
@@ -352,12 +365,11 @@ display: none;
 .triangle-isosceles:after {
   content: "";
   position: absolute;
-  bottom: -20px; /* value = - border-top-width - border-bottom-width */
-  left: 80px; /* controls horizontal position */
-  border-width: 25px 25px 0; /* vary these values to change the angle of the vertex */
+  bottom: -20px; 
+  left: 80px; 
+  border-width: 25px 25px 0; 
   border-style: solid;
   border-color: #fefefa transparent;
-  /* reduce the damage in FF3.0 */
   display: block;
   width: 0;
 }
@@ -366,20 +378,20 @@ display: none;
 ------------------------------------------ */
 
 .triangle-isosceles.top:after {
-  top: var(--custom-top); /* value = - border-top-width - border-bottom-width */
-  right: var(--custom-right); /* controls horizontal position */
+  top: var(--custom-top); 
+  right: var(--custom-right); 
   bottom: auto;
   left: auto;
-  border-width: 0 15px 15px; /* vary these values to change the angle of the vertex */
+  border-width: 0 15px 15px; 
   border-color: #fefefa transparent;
 }
 
 .triangle-isosceles.bottom:after {
-  bottom: var(--custom-bottom); /* value = - border-top-width - border-bottom-width */
-  right: var(--custom-right); /* controls horizontal position */
+  bottom: var(--custom-bottom); 
+  right: var(--custom-right); 
   top: auto;
   left: auto;
-  border-width: 15px 0px 15px 0x; /* vary these values to change the angle of the vertex */
+  border-width: 15px 0px 15px 0x; 
   border-color: #fefefa transparent;
 }
 
@@ -387,8 +399,8 @@ display: none;
 ------------------------------------------ */
 
 .triangle-isosceles.left:after {
-  top: 55px; /* controls vertical position */
-  left: -30px; /* value = - border-left-width - border-right-width */
+  top: 55px; 
+  left: -30px; 
   bottom: auto;
   border-width: 30px 40px 30px 0;
   border-color: transparent #fefefa;
@@ -398,8 +410,8 @@ display: none;
 ------------------------------------------ */
 
 .triangle-isosceles.right:after {
-  top: 45px; /* controls vertical position */
-  right: -30px; /* value = - border-left-width - border-right-width */
+  top: 45px; 
+  right: -30px; 
   bottom: auto;
   left: auto;
   border-width: 40px 0 40px 50px;
@@ -695,7 +707,7 @@ transition: 0.7s ease opacity;
 }
 /*Section9*/
 #section9 {
-  background-color: #74aedb;
+  background-color: rgba(108, 122, 137,1);
   padding: 30px 0px;
 }
 input::placeholder {
@@ -759,7 +771,7 @@ textarea::placeholder {
   text-transform: uppercase;
   box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.19);
   background-color: #74aedb;
-}
+} 
 
 
 @media only screen and (max-width: 767px) {
@@ -769,8 +781,23 @@ textarea::placeholder {
     padding-left: 0px;  
   }
 
+  .navbar-brand-arrow{
+    margin-top: -20px;
+    margin-right: 0px;
+    margin-left: -12px;
+    transform: scale(0.4);
+  }
+  
+  .navbar-brand-arrow-top{
+    margin-right: 2px;
+    margin-left: 5px;
+    margin-top: 2px;
+    transform: scale(0.3);
+  }
+
   .navbar-brand-left {
-    width: 200px;
+    width: 150px;
+    margin-left: -5px;
     height: auto;
   }
 
@@ -957,6 +984,7 @@ textarea::placeholder {
 
 }
 
+
 @media only screen and (min-width: 200px) and (max-width: 600px) {
   #right-main-text {
     font-size: 25px;
@@ -968,16 +996,30 @@ textarea::placeholder {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width: 992px) {
+
+  .navbar-brand-arrow{
+    margin-top: -20px;
+    margin-right: -5px;
+    margin-left: -16px;
+    transform: scale(0.3);
+  }
   
-  .nav-link {
-    margin-right: 15px;
-    margin-top: 40px;
+  .navbar-brand-arrow-top{
+    margin-right: 2px;
+    margin-left: -50px;
+    margin-top: 2px;
+    transform: scale(0.4);
   }
 
   .navbar-brand-left {
     width: 200px;
+    margin-left: -5px;
     height: auto;
-    margin-left: -55px;
+  }
+  
+  .nav-link {
+    margin-right: 15px;
+    margin-top: 40px;
   }
 
   .signup-nav {
@@ -1061,11 +1103,26 @@ textarea::placeholder {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px){
+  .navbar-brand-arrow{
+    margin-top: -20px;
+    margin-right: 2px;
+    margin-left: -12px;
+    transform: scale(0.4);
+  }
+  
+  .navbar-brand-arrow-top{
+    margin-right: 2px;
+    margin-left: -55px;
+    margin-top: 2px;
+    transform: scale(0.4);
+  }
+
   .navbar-brand-left {
     width: 200px;
+    margin-left: -5px;
     height: auto;
-    margin-left: -55px;
   }
+  
 
   .section3-heading {
     font-size: 30px; 

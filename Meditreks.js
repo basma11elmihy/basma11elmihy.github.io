@@ -346,21 +346,21 @@ $(document).ready(function () {
     if ($(window).width() <= 600) {
       if (slider.value == 3) {
         mobile_slider(
-          "./Assets/Mega.png",
+          "./assets/Mega.png",
           "0px",
           "700+ Deliveries / Month",
           "$5"
         );
       } else if (slider.value == 1) {
         mobile_slider(
-          "./Assets/Small.png",
+          "./assets/Small.png",
           "0px",
           "1 - 350 Deliveries / Month",
           "$7"
         );
       } else if (slider.value == 2) {
         mobile_slider(
-          "./Assets/Large.png",
+          "./assets/Large.png",
           "25px",
           "351 - 700 Deliveries / Month",
           "$6"

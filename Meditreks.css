@@ -80,9 +80,9 @@ body {
 .signup-nav {
   color: white;
   background-color: #74aedb;
-  font-size: small;
+  font-size: 15px;
   font-weight: 700;
-  padding: 12px 65px;
+  padding: 12px 45px;
   border-radius: 25px;
   margin-left: 25px;
   outline: none !important;
@@ -803,6 +803,17 @@ textarea::placeholder {
   background-color: #74aedb;
 }
 
+.started-btn{
+  padding: 12px 40px;
+  border-radius: 50px;
+  font-size: large;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.19);
+  background-color: #74aedb;
+}
+
 
 @media only screen and (max-width: 767px) {
 
@@ -859,6 +870,18 @@ textarea::placeholder {
 
   .section-sub-heading-only {
     padding: 1% 6%;
+  }
+
+  .started-btn{
+    padding: 7px 35px;
+    margin-top: 45px;
+    border-radius: 50px;
+    font-size: medium;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 12px 12px rgba(0, 0, 0, 0.19);
+    background-color: #74aedb;
   }
 
   /*Section3*/
